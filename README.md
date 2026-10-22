@@ -1,24 +1,31 @@
-# Task 3: Automated File Organizer & Cleanup Utility
+# Datheon Python Programming Internship
 
-A command-line tool that sorts the files in a folder into sub-folders by type
-(Images, Documents, Spreadsheets, Videos, Audio, Archives, Code, Installers, Others).
-Python 3, standard library only (`os`, `shutil`, `argparse`).
+Projects completed for the Datheon Python Programming Internship (Batch 01).
 
-## Features
-- Safe by default: running without `--apply` only previews what would move
-- Groups files by extension into category folders
-- Never overwrites: duplicate names become `photo (1).jpg`, `photo (2).jpg`
-- Skips sub-folders and hidden files
-- Optional `--clean-empty` removes empty folders afterwards
-- Prints a summary of how many files went to each category
+**Author:** Harshita Sharma
 
-## Usage
-```
-python file_organizer.py
-python file_organizer.py "C:/Users/me/Downloads"
-python file_organizer.py "C:/Users/me/Downloads" --apply
-python file_organizer.py "C:/Users/me/Downloads" --apply --clean-empty
-```
+## Task 1: Hangman Game (`Task1_Hangman/hangman.py`)
+A console word-guessing game with ASCII gallows art.
+- Random secret word, masked display (e.g. `_ R E A _`)
+- 6 allowed mistakes, repeated guesses not penalised
+- Win and game-over screens, play-again option
 
-## Customising
-Edit the `CATEGORIES` dictionary at the top of `file_organizer.py` to add or change file types.
+Run: `python Task1_Hangman/hangman.py`
+
+## Task 3: File Organizer (`Task3_File_Organizer/file_organizer.py`)
+Sorts the files in a folder into sub-folders by type (Images, Documents, etc.).
+- Safe preview mode by default; add `--apply` to move files
+- Never overwrites duplicate names
+- Optional `--clean-empty` removes empty folders
+
+Run: `python Task3_File_Organizer/file_organizer.py "C:/path/to/folder" --apply`
+
+## Task 4: Terminal Chatbot (`Task4_Terminal_Chatbot/chatbot.py`)
+A rule-based assistant that recognises multiple intents.
+- Greets you, remembers your name, tells time/date, jokes and facts
+- Solves simple maths, shows help, says goodbye
+
+Run: `python Task4_Terminal_Chatbot/chatbot.py`
+
+## Requirements
+Python 3, standard library only. No installs needed.
